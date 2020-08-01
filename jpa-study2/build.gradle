@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'jpa-basic'
+version '1.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.hibernate:hibernate-gradle-plugin:5.4.18.Final'
+    compile 'com.h2database:h2:1.4.200'
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
+}
+
